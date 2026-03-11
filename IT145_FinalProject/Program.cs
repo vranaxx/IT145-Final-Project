@@ -1,4 +1,4 @@
-namespace IT145_Final_Project
+namespace IT145_FinalProject
 {
     internal static class Program
     {

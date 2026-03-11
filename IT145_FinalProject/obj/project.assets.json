@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Documents\\VIsual Studio\\SNHU\\IT145\\IT145_Final_Project\\IT145_Final_Project.csproj",
-      "projectName": "IT145_Final_Project",
-      "projectPath": "C:\\Documents\\VIsual Studio\\SNHU\\IT145\\IT145_Final_Project\\IT145_Final_Project.csproj",
+      "projectUniqueName": "C:\\Documents\\VIsual Studio\\SNHU\\IT145\\IT145_FinalProject\\IT145_FinalProject.csproj",
+      "projectName": "IT145_FinalProject",
+      "projectPath": "C:\\Documents\\VIsual Studio\\SNHU\\IT145\\IT145_FinalProject\\IT145_FinalProject.csproj",
       "packagesPath": "C:\\Users\\tsham\\.nuget\\packages\\",
-      "outputPath": "C:\\Documents\\VIsual Studio\\SNHU\\IT145\\IT145_Final_Project\\obj\\",
+      "outputPath": "C:\\Documents\\VIsual Studio\\SNHU\\IT145\\IT145_FinalProject\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,6 +33,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
