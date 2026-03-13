@@ -6,5 +6,11 @@ namespace IT145_FinalProject
         {
             InitializeComponent();
         }
+
+        private void Form_Click(object sender, EventArgs e)
+        {
+            new SubForm(this,(Button)sender).Show();
+            this.Hide();
+        }
     }
 }
