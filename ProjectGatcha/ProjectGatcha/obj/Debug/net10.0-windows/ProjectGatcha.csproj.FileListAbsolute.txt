@@ -1,0 +1,16 @@
+C:\Users\jkris\OneDrive\Programing\IT145\C#\ProjectGatcha\ProjectGatcha\bin\Debug\net10.0-windows\ProjectGatcha.exe
+C:\Users\jkris\OneDrive\Programing\IT145\C#\ProjectGatcha\ProjectGatcha\bin\Debug\net10.0-windows\ProjectGatcha.deps.json
+C:\Users\jkris\OneDrive\Programing\IT145\C#\ProjectGatcha\ProjectGatcha\bin\Debug\net10.0-windows\ProjectGatcha.runtimeconfig.json
+C:\Users\jkris\OneDrive\Programing\IT145\C#\ProjectGatcha\ProjectGatcha\bin\Debug\net10.0-windows\ProjectGatcha.dll
+C:\Users\jkris\OneDrive\Programing\IT145\C#\ProjectGatcha\ProjectGatcha\bin\Debug\net10.0-windows\ProjectGatcha.pdb
+C:\Users\jkris\OneDrive\Programing\IT145\C#\ProjectGatcha\ProjectGatcha\obj\Debug\net10.0-windows\ProjectGatcha.Form1.resources
+C:\Users\jkris\OneDrive\Programing\IT145\C#\ProjectGatcha\ProjectGatcha\obj\Debug\net10.0-windows\ProjectGatcha.csproj.GenerateResource.cache
+C:\Users\jkris\OneDrive\Programing\IT145\C#\ProjectGatcha\ProjectGatcha\obj\Debug\net10.0-windows\ProjectGatcha.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jkris\OneDrive\Programing\IT145\C#\ProjectGatcha\ProjectGatcha\obj\Debug\net10.0-windows\ProjectGatcha.AssemblyInfoInputs.cache
+C:\Users\jkris\OneDrive\Programing\IT145\C#\ProjectGatcha\ProjectGatcha\obj\Debug\net10.0-windows\ProjectGatcha.AssemblyInfo.cs
+C:\Users\jkris\OneDrive\Programing\IT145\C#\ProjectGatcha\ProjectGatcha\obj\Debug\net10.0-windows\ProjectGatcha.csproj.CoreCompileInputs.cache
+C:\Users\jkris\OneDrive\Programing\IT145\C#\ProjectGatcha\ProjectGatcha\obj\Debug\net10.0-windows\ProjectGatcha.dll
+C:\Users\jkris\OneDrive\Programing\IT145\C#\ProjectGatcha\ProjectGatcha\obj\Debug\net10.0-windows\refint\ProjectGatcha.dll
+C:\Users\jkris\OneDrive\Programing\IT145\C#\ProjectGatcha\ProjectGatcha\obj\Debug\net10.0-windows\ProjectGatcha.pdb
+C:\Users\jkris\OneDrive\Programing\IT145\C#\ProjectGatcha\ProjectGatcha\obj\Debug\net10.0-windows\ProjectGatcha.genruntimeconfig.cache
+C:\Users\jkris\OneDrive\Programing\IT145\C#\ProjectGatcha\ProjectGatcha\obj\Debug\net10.0-windows\ref\ProjectGatcha.dll
