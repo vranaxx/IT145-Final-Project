@@ -16,3 +16,6 @@ C:\Documents\VIsual Studio\SNHU\IT145\IT145_FinalProject\obj\Debug\net10.0-windo
 C:\Documents\VIsual Studio\SNHU\IT145\IT145_FinalProject\obj\Debug\net10.0-windows\IT145_FinalProject.pdb
 C:\Documents\VIsual Studio\SNHU\IT145\IT145_FinalProject\obj\Debug\net10.0-windows\IT145_FinalProject.genruntimeconfig.cache
 C:\Documents\VIsual Studio\SNHU\IT145\IT145_FinalProject\obj\Debug\net10.0-windows\ref\IT145_FinalProject.dll
+C:\Documents\VIsual Studio\SNHU\IT145\IT145_FinalProject\obj\Debug\net10.0-windows\IT145_FinalProject.CharacterCreation.resources
+C:\Documents\VIsual Studio\SNHU\IT145\IT145_FinalProject\obj\Debug\net10.0-windows\IT145_FinalProject.Settings.resources
+C:\Documents\VIsual Studio\SNHU\IT145\IT145_FinalProject\obj\Debug\net10.0-windows\IT145_FinalProject.CharacterList.resources

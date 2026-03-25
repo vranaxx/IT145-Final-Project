@@ -1,6 +1,6 @@
 ﻿namespace IT145_FinalProject
 {
-    partial class GameMain
+    partial class CharacterList
     {
         /// <summary>
         /// Required designer variable.
@@ -33,9 +33,7 @@
             GameMainMenuPanel = new Panel();
             BackButton = new Button();
             InventoryButton = new Button();
-            CharacterButton = new Button();
-            RestaurantButton = new Button();
-            GachaButton = new Button();
+            CreateCharButton = new Button();
             GameMainViewPanel = new Panel();
             TopBarPanel.SuspendLayout();
             GameMainMenuPanel.SuspendLayout();
@@ -49,7 +47,7 @@
             TopBarPanel.Location = new Point(0, 0);
             TopBarPanel.Name = "TopBarPanel";
             TopBarPanel.Size = new Size(800, 25);
-            TopBarPanel.TabIndex = 11;
+            TopBarPanel.TabIndex = 12;
             // 
             // ExitButton
             // 
@@ -68,14 +66,12 @@
             GameMainMenuPanel.BackgroundImage = Properties.Resources.paper_background;
             GameMainMenuPanel.Controls.Add(BackButton);
             GameMainMenuPanel.Controls.Add(InventoryButton);
-            GameMainMenuPanel.Controls.Add(CharacterButton);
-            GameMainMenuPanel.Controls.Add(RestaurantButton);
-            GameMainMenuPanel.Controls.Add(GachaButton);
+            GameMainMenuPanel.Controls.Add(CreateCharButton);
             GameMainMenuPanel.Dock = DockStyle.Left;
             GameMainMenuPanel.Location = new Point(0, 25);
             GameMainMenuPanel.Name = "GameMainMenuPanel";
             GameMainMenuPanel.Size = new Size(200, 450);
-            GameMainMenuPanel.TabIndex = 12;
+            GameMainMenuPanel.TabIndex = 13;
             // 
             // BackButton
             // 
@@ -90,7 +86,7 @@
             BackButton.Name = "BackButton";
             BackButton.Size = new Size(170, 45);
             BackButton.TabIndex = 4;
-            BackButton.Text = "Title";
+            BackButton.Text = "Main Menu";
             BackButton.UseVisualStyleBackColor = false;
             BackButton.Click += BackButton_Click;
             // 
@@ -103,61 +99,29 @@
             InventoryButton.FlatStyle = FlatStyle.Flat;
             InventoryButton.Font = new Font("Viner Hand ITC", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             InventoryButton.ForeColor = Color.Cyan;
-            InventoryButton.Location = new Point(12, 261);
+            InventoryButton.Location = new Point(12, 182);
             InventoryButton.Name = "InventoryButton";
             InventoryButton.Size = new Size(170, 45);
             InventoryButton.TabIndex = 3;
             InventoryButton.Text = "Inventory";
             InventoryButton.UseVisualStyleBackColor = false;
             // 
-            // CharacterButton
+            // CreateCharButton
             // 
-            CharacterButton.BackColor = Color.Transparent;
-            CharacterButton.BackgroundImage = Properties.Resources.RPG_GUI_Button;
-            CharacterButton.BackgroundImageLayout = ImageLayout.Stretch;
-            CharacterButton.FlatAppearance.BorderSize = 0;
-            CharacterButton.FlatStyle = FlatStyle.Flat;
-            CharacterButton.Font = new Font("Viner Hand ITC", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            CharacterButton.ForeColor = Color.Cyan;
-            CharacterButton.Location = new Point(12, 210);
-            CharacterButton.Name = "CharacterButton";
-            CharacterButton.Size = new Size(170, 45);
-            CharacterButton.TabIndex = 2;
-            CharacterButton.Text = "Characters";
-            CharacterButton.UseVisualStyleBackColor = false;
-            CharacterButton.Click += CharacterButton_Click;
-            // 
-            // RestaurantButton
-            // 
-            RestaurantButton.BackColor = Color.Transparent;
-            RestaurantButton.BackgroundImage = Properties.Resources.RPG_GUI_Button;
-            RestaurantButton.BackgroundImageLayout = ImageLayout.Stretch;
-            RestaurantButton.FlatAppearance.BorderSize = 0;
-            RestaurantButton.FlatStyle = FlatStyle.Flat;
-            RestaurantButton.Font = new Font("Viner Hand ITC", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            RestaurantButton.ForeColor = Color.Cyan;
-            RestaurantButton.Location = new Point(12, 159);
-            RestaurantButton.Name = "RestaurantButton";
-            RestaurantButton.Size = new Size(170, 45);
-            RestaurantButton.TabIndex = 1;
-            RestaurantButton.Text = "Restaurant";
-            RestaurantButton.UseVisualStyleBackColor = false;
-            // 
-            // GachaButton
-            // 
-            GachaButton.BackColor = Color.Transparent;
-            GachaButton.BackgroundImage = Properties.Resources.RPG_GUI_Button;
-            GachaButton.BackgroundImageLayout = ImageLayout.Stretch;
-            GachaButton.FlatAppearance.BorderSize = 0;
-            GachaButton.FlatStyle = FlatStyle.Flat;
-            GachaButton.Font = new Font("Viner Hand ITC", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            GachaButton.ForeColor = Color.Cyan;
-            GachaButton.Location = new Point(12, 108);
-            GachaButton.Name = "GachaButton";
-            GachaButton.Size = new Size(170, 45);
-            GachaButton.TabIndex = 0;
-            GachaButton.Text = "Gacha";
-            GachaButton.UseVisualStyleBackColor = false;
+            CreateCharButton.BackColor = Color.Transparent;
+            CreateCharButton.BackgroundImage = Properties.Resources.RPG_GUI_Button;
+            CreateCharButton.BackgroundImageLayout = ImageLayout.Stretch;
+            CreateCharButton.FlatAppearance.BorderSize = 0;
+            CreateCharButton.FlatStyle = FlatStyle.Flat;
+            CreateCharButton.Font = new Font("Viner Hand ITC", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            CreateCharButton.ForeColor = Color.Cyan;
+            CreateCharButton.Location = new Point(12, 131);
+            CreateCharButton.Name = "CreateCharButton";
+            CreateCharButton.Size = new Size(170, 45);
+            CreateCharButton.TabIndex = 2;
+            CreateCharButton.Text = "Create Character";
+            CreateCharButton.UseVisualStyleBackColor = false;
+            CreateCharButton.Click += CreateCharButton_Click;
             // 
             // GameMainViewPanel
             // 
@@ -165,9 +129,9 @@
             GameMainViewPanel.Location = new Point(200, 25);
             GameMainViewPanel.Name = "GameMainViewPanel";
             GameMainViewPanel.Size = new Size(600, 450);
-            GameMainViewPanel.TabIndex = 13;
+            GameMainViewPanel.TabIndex = 14;
             // 
-            // GameMain
+            // CharacterList
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -175,11 +139,9 @@
             Controls.Add(GameMainViewPanel);
             Controls.Add(GameMainMenuPanel);
             Controls.Add(TopBarPanel);
-            ForeColor = SystemColors.ControlText;
             FormBorderStyle = FormBorderStyle.None;
-            Name = "GameMain";
-            Text = "GameMain";
-            Load += GameMain_Load;
+            Name = "CharacterList";
+            Text = "CharacterList";
             TopBarPanel.ResumeLayout(false);
             GameMainMenuPanel.ResumeLayout(false);
             ResumeLayout(false);
@@ -190,11 +152,9 @@
         private Panel TopBarPanel;
         private Button ExitButton;
         private Panel GameMainMenuPanel;
-        private Panel GameMainViewPanel;
-        private Button GachaButton;
         private Button BackButton;
         private Button InventoryButton;
-        private Button CharacterButton;
-        private Button RestaurantButton;
+        private Button CreateCharButton;
+        private Panel GameMainViewPanel;
     }
 }

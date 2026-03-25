@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace IT145_FinalProject
 {
-    public partial class GameMain : Form
+    public partial class CharacterList : Form
     {
         #region Windows API Import for Form drag
 
@@ -22,17 +22,11 @@ namespace IT145_FinalProject
         private const int HT_CAPTION = 0x2;
 
         #endregion
-        public GameMain()
+        public CharacterList()
         {
             InitializeComponent();
 
             this.TopBarPanel.MouseDown += new MouseEventHandler(TopBar_MouseDown); //TBS: Part of the form moving event
-
-        }
-
-        private void GameMain_Load(object sender, EventArgs e)
-        {
-
         }
         private void TopBar_MouseDown(object sender, MouseEventArgs e) //TBS: Event for mooving form
         {
@@ -42,27 +36,27 @@ namespace IT145_FinalProject
                 SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
             }
         }
-        private void ExitButton_Click(object sender, EventArgs e) //TBS: Exits Application
+        private void ExitButton_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+        private void CreateCharButton_Click(object sender, EventArgs e)
+        {
+            CharacterCreation charactercreation = new CharacterCreation();
+
+            charactercreation.StartPosition = FormStartPosition.Manual;
+
+            charactercreation.Location = this.Location;
+
+            charactercreation.FormClosed += (s, args) => this.Show();
+
+            this.Hide();
+
+            charactercreation.Show();
         }
         private void BackButton_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-        private void CharacterButton_Click(object sender, EventArgs e)
-        {
-            CharacterList characterlist = new CharacterList();
-
-            characterlist.StartPosition = FormStartPosition.Manual;
-
-            characterlist.Location = this.Location;
-
-            characterlist.FormClosed += (s, args) => this.Show();
-
-            this.Hide();
-
-            characterlist.Show();
         }
     }
 }
