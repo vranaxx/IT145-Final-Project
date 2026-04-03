@@ -31,6 +31,7 @@ namespace IT145_FinalProject
         protected int _characterATK; //TBS: Stat for damage scaling
         protected int _characterINT; //TBS: Stat for secondary/passive/skill scaling
         Profession _characterProfession; //TBS: Character profession inherit
+        protected Ingredient characterBasicIngred;
 
         public static List<Character> characterInventory = new(); // List that contains all created characters
 
@@ -117,6 +118,12 @@ namespace IT145_FinalProject
         {
             _professionGUID.Add(GUID._characterID);
         }
+
+        public void CharacterSetBasicIngredient(Ingredient ingred)
+        {
+            characterBasicIngred = ingred;
+        }
+
         public string GetProfessionName() //TBS: Get Function for Name
         {
             return _characterProfession.GetProfessionName();
@@ -141,6 +148,24 @@ namespace IT145_FinalProject
         public string GetCharacterName() //TBS: Get Function for character name
         {
             return _characterName;
+        }
+
+        public string GetBasicIngredientName()
+        {
+            if (characterBasicIngred != null)
+                return characterBasicIngred.getStats().Name;
+            else
+                return "None";
+        }
+        public (int HP, int ATK, int INT) GetBasicIngredientStats()
+        {
+            if (characterBasicIngred != null)
+            {
+                var stats = characterBasicIngred.getStats();
+                return (stats.HP, stats.ATK, stats.INT);
+            }
+            else
+                return (0,0,0);
         }
 
         #endregion

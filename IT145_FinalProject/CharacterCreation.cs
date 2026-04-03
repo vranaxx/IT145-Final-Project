@@ -35,7 +35,6 @@ namespace IT145_FinalProject
 
         private void CharacterCreation_Load(object sender, EventArgs e)
         {
-            characterCombo.DataSource = Character.characterInventory;
 
             // this.WindowState = FormWindowState.Normal; //TBS: Temp set windowstate to normal to ensure changes take effect
             // this.Bounds = Screen.PrimaryScreen.Bounds; //TBS: Sets form bounds to screen bounds
@@ -55,6 +54,10 @@ namespace IT145_FinalProject
             createdChar = new Character(tempProfession, tempNameSelection);
             Character.characterInventory.Add(createdChar);
 
+            createdChar.CharacterSetBasicIngredient(
+                Ingredient.basicIngredients[Random.Shared.Next(Ingredient.basicIngredients.Count)]
+                );
+
             MessageBox.Show("Character created successfully!");
         }
 
@@ -65,12 +68,14 @@ namespace IT145_FinalProject
                 MessageBox.Show("Error: No character created yet!");
                 return;
             }
+            var charStats = createdChar.GetBasicIngredientStats();
             MessageBox.Show(
                 $"Name: {createdChar.GetCharacterName()}\n" +
                 $"Profession: {createdChar.GetProfessionName()}\n" +
                 $"ATK: {createdChar.GetProfessionATK()}\n" +
                 $"HP: {createdChar.GetProfessionHP()}\n" +
-                $"INT: {createdChar.GetProfessionINT()}"
+                $"INT: {createdChar.GetProfessionINT()}\n" +
+                $"Ingredient 1: {createdChar.GetBasicIngredientName()}: (ATK: {charStats.ATK} HP: {charStats.HP} INT: {charStats.INT})"
                 );
         }
 

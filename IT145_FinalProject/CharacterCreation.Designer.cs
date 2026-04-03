@@ -36,7 +36,6 @@
             TopBarPanel = new Panel();
             ExitButton = new Button();
             CharCreateMenuPanel = new Panel();
-            characterCombo = new ComboBox();
             BackButton = new Button();
             TopBarPanel.SuspendLayout();
             CharCreateMenuPanel.SuspendLayout();
@@ -113,7 +112,6 @@
             // CharCreateMenuPanel
             // 
             CharCreateMenuPanel.BackgroundImage = Properties.Resources.paper_background;
-            CharCreateMenuPanel.Controls.Add(characterCombo);
             CharCreateMenuPanel.Controls.Add(BackButton);
             CharCreateMenuPanel.Controls.Add(charnameTxt);
             CharCreateMenuPanel.Controls.Add(professionCombo);
@@ -125,17 +123,6 @@
             CharCreateMenuPanel.Name = "CharCreateMenuPanel";
             CharCreateMenuPanel.Size = new Size(200, 450);
             CharCreateMenuPanel.TabIndex = 12;
-            // 
-            // characterCombo
-            // 
-            characterCombo.DisplayMember = "GetCharacterName";
-            characterCombo.DropDownStyle = ComboBoxStyle.DropDownList;
-            characterCombo.FormattingEnabled = true;
-            characterCombo.Items.AddRange(new object[] { "Warrior", "Tank", "Ranged" });
-            characterCombo.Location = new Point(30, 170);
-            characterCombo.Name = "characterCombo";
-            characterCombo.Size = new Size(151, 28);
-            characterCombo.TabIndex = 10;
             // 
             // BackButton
             // 
@@ -182,6 +169,5 @@
         private Button ExitButton;
         private Panel CharCreateMenuPanel;
         private Button BackButton;
-        private ComboBox characterCombo;
     }
 }
