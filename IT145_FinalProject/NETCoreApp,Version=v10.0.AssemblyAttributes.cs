@@ -1,6 +1,6 @@
 ﻿namespace IT145_FinalProject
 {
-    partial class Adventure
+    partial class CharacterList
     {
         /// <summary>
         /// Required designer variable.
@@ -31,11 +31,14 @@
             TopBarPanel = new Panel();
             ExitButton = new Button();
             GameMainMenuPanel = new Panel();
-            TravelButton = new Button();
             BackButton = new Button();
+            InventoryButton = new Button();
+            CreateCharButton = new Button();
+            CharacterListCombo = new ComboBox();
             GameMainViewPanel = new Panel();
             TopBarPanel.SuspendLayout();
             GameMainMenuPanel.SuspendLayout();
+            GameMainViewPanel.SuspendLayout();
             SuspendLayout();
             // 
             // TopBarPanel
@@ -63,30 +66,14 @@
             // GameMainMenuPanel
             // 
             GameMainMenuPanel.BackgroundImage = Properties.Resources.paper_background;
-            GameMainMenuPanel.Controls.Add(TravelButton);
             GameMainMenuPanel.Controls.Add(BackButton);
+            GameMainMenuPanel.Controls.Add(InventoryButton);
+            GameMainMenuPanel.Controls.Add(CreateCharButton);
             GameMainMenuPanel.Dock = DockStyle.Left;
             GameMainMenuPanel.Location = new Point(0, 25);
             GameMainMenuPanel.Name = "GameMainMenuPanel";
             GameMainMenuPanel.Size = new Size(200, 450);
             GameMainMenuPanel.TabIndex = 13;
-            // 
-            // TravelButton
-            // 
-            TravelButton.BackColor = Color.Transparent;
-            TravelButton.BackgroundImage = Properties.Resources.RPG_GUI_Button;
-            TravelButton.BackgroundImageLayout = ImageLayout.Stretch;
-            TravelButton.FlatAppearance.BorderSize = 0;
-            TravelButton.FlatStyle = FlatStyle.Flat;
-            TravelButton.Font = new Font("Viner Hand ITC", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            TravelButton.ForeColor = Color.Cyan;
-            TravelButton.Location = new Point(12, 6);
-            TravelButton.Name = "TravelButton";
-            TravelButton.Size = new Size(170, 45);
-            TravelButton.TabIndex = 5;
-            TravelButton.Text = "Travel";
-            TravelButton.UseVisualStyleBackColor = false;
-            TravelButton.Click += TravelButton_Click;
             // 
             // BackButton
             // 
@@ -101,19 +88,64 @@
             BackButton.Name = "BackButton";
             BackButton.Size = new Size(170, 45);
             BackButton.TabIndex = 4;
-            BackButton.Text = "Back";
+            BackButton.Text = "Main Menu";
             BackButton.UseVisualStyleBackColor = false;
             BackButton.Click += BackButton_Click;
             // 
+            // InventoryButton
+            // 
+            InventoryButton.BackColor = Color.Transparent;
+            InventoryButton.BackgroundImage = Properties.Resources.RPG_GUI_Button;
+            InventoryButton.BackgroundImageLayout = ImageLayout.Stretch;
+            InventoryButton.FlatAppearance.BorderSize = 0;
+            InventoryButton.FlatStyle = FlatStyle.Flat;
+            InventoryButton.Font = new Font("Viner Hand ITC", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            InventoryButton.ForeColor = Color.Cyan;
+            InventoryButton.Location = new Point(12, 182);
+            InventoryButton.Name = "InventoryButton";
+            InventoryButton.Size = new Size(170, 45);
+            InventoryButton.TabIndex = 3;
+            InventoryButton.Text = "Character List";
+            InventoryButton.UseVisualStyleBackColor = false;
+            InventoryButton.Click += InventoryButton_Click;
+            // 
+            // CreateCharButton
+            // 
+            CreateCharButton.BackColor = Color.Transparent;
+            CreateCharButton.BackgroundImage = Properties.Resources.RPG_GUI_Button;
+            CreateCharButton.BackgroundImageLayout = ImageLayout.Stretch;
+            CreateCharButton.FlatAppearance.BorderSize = 0;
+            CreateCharButton.FlatStyle = FlatStyle.Flat;
+            CreateCharButton.Font = new Font("Viner Hand ITC", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            CreateCharButton.ForeColor = Color.Cyan;
+            CreateCharButton.Location = new Point(12, 131);
+            CreateCharButton.Name = "CreateCharButton";
+            CreateCharButton.Size = new Size(170, 45);
+            CreateCharButton.TabIndex = 2;
+            CreateCharButton.Text = "Create Character";
+            CreateCharButton.UseVisualStyleBackColor = false;
+            CreateCharButton.Click += CreateCharButton_Click;
+            // 
+            // CharacterListCombo
+            // 
+            CharacterListCombo.FormattingEnabled = true;
+            CharacterListCombo.Location = new Point(17, 17);
+            CharacterListCombo.Name = "CharacterListCombo";
+            CharacterListCombo.Size = new Size(151, 28);
+            CharacterListCombo.TabIndex = 0;
+            CharacterListCombo.SelectedIndexChanged += CharacterListCombo_SelectedIndexChanged;
+            // 
             // GameMainViewPanel
             // 
+            GameMainViewPanel.BackgroundImage = Properties.Resources.wood_background;
+            GameMainViewPanel.Controls.Add(CharacterListCombo);
             GameMainViewPanel.Dock = DockStyle.Right;
             GameMainViewPanel.Location = new Point(200, 25);
             GameMainViewPanel.Name = "GameMainViewPanel";
             GameMainViewPanel.Size = new Size(600, 450);
             GameMainViewPanel.TabIndex = 14;
             // 
-            // Adventure
+            // CharacterList
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -122,10 +154,11 @@
             Controls.Add(GameMainMenuPanel);
             Controls.Add(TopBarPanel);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "Adventure";
-            Text = "Adventure";
+            Name = "CharacterList";
+            Text = "CharacterList";
             TopBarPanel.ResumeLayout(false);
             GameMainMenuPanel.ResumeLayout(false);
+            GameMainViewPanel.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -134,8 +167,10 @@
         private Panel TopBarPanel;
         private Button ExitButton;
         private Panel GameMainMenuPanel;
-        private Button TravelButton;
         private Button BackButton;
+        private Button InventoryButton;
+        private Button CreateCharButton;
         private Panel GameMainViewPanel;
+        private ComboBox CharacterListCombo;
     }
 }

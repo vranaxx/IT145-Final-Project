@@ -1,0 +1,305 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Documents\\VIsual Studio\\SNHU\\IT145\\IT145_FinalProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BAF60808-C52D-251D-9D42-1518EE777438}|IT145_FinalProject.csproj|c:\\documents\\visual studio\\snhu\\it145\\it145_finalproject\\combatform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAF60808-C52D-251D-9D42-1518EE777438}|IT145_FinalProject.csproj|solutionrelative:combatform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAF60808-C52D-251D-9D42-1518EE777438}|IT145_FinalProject.csproj|c:\\documents\\visual studio\\snhu\\it145\\it145_finalproject\\combat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAF60808-C52D-251D-9D42-1518EE777438}|IT145_FinalProject.csproj|solutionrelative:combat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAF60808-C52D-251D-9D42-1518EE777438}|IT145_FinalProject.csproj|C:\\Documents\\VIsual Studio\\SNHU\\IT145\\IT145_FinalProject\\combatform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BAF60808-C52D-251D-9D42-1518EE777438}|IT145_FinalProject.csproj|solutionrelative:combatform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAF60808-C52D-251D-9D42-1518EE777438}|IT145_FinalProject.csproj|c:\\documents\\visual studio\\snhu\\it145\\it145_finalproject\\profession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAF60808-C52D-251D-9D42-1518EE777438}|IT145_FinalProject.csproj|solutionrelative:profession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAF60808-C52D-251D-9D42-1518EE777438}|IT145_FinalProject.csproj|c:\\documents\\visual studio\\snhu\\it145\\it145_finalproject\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAF60808-C52D-251D-9D42-1518EE777438}|IT145_FinalProject.csproj|solutionrelative:character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAF60808-C52D-251D-9D42-1518EE777438}|IT145_FinalProject.csproj|c:\\documents\\visual studio\\snhu\\it145\\it145_finalproject\\charactercreation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAF60808-C52D-251D-9D42-1518EE777438}|IT145_FinalProject.csproj|solutionrelative:charactercreation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAF60808-C52D-251D-9D42-1518EE777438}|IT145_FinalProject.csproj|c:\\documents\\visual studio\\snhu\\it145\\it145_finalproject\\ingredient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAF60808-C52D-251D-9D42-1518EE777438}|IT145_FinalProject.csproj|solutionrelative:ingredient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAF60808-C52D-251D-9D42-1518EE777438}|IT145_FinalProject.csproj|c:\\documents\\visual studio\\snhu\\it145\\it145_finalproject\\adventure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAF60808-C52D-251D-9D42-1518EE777438}|IT145_FinalProject.csproj|solutionrelative:adventure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAF60808-C52D-251D-9D42-1518EE777438}|IT145_FinalProject.csproj|C:\\Documents\\VIsual Studio\\SNHU\\IT145\\IT145_FinalProject\\gamemain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BAF60808-C52D-251D-9D42-1518EE777438}|IT145_FinalProject.csproj|solutionrelative:gamemain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAF60808-C52D-251D-9D42-1518EE777438}|IT145_FinalProject.csproj|C:\\Documents\\VIsual Studio\\SNHU\\IT145\\IT145_FinalProject\\titleform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BAF60808-C52D-251D-9D42-1518EE777438}|IT145_FinalProject.csproj|solutionrelative:titleform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAF60808-C52D-251D-9D42-1518EE777438}|IT145_FinalProject.csproj|c:\\documents\\visual studio\\snhu\\it145\\it145_finalproject\\titleform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAF60808-C52D-251D-9D42-1518EE777438}|IT145_FinalProject.csproj|solutionrelative:titleform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAF60808-C52D-251D-9D42-1518EE777438}|IT145_FinalProject.csproj|C:\\Documents\\VIsual Studio\\SNHU\\IT145\\IT145_FinalProject\\adventure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BAF60808-C52D-251D-9D42-1518EE777438}|IT145_FinalProject.csproj|solutionrelative:adventure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAF60808-C52D-251D-9D42-1518EE777438}|IT145_FinalProject.csproj|c:\\documents\\visual studio\\snhu\\it145\\it145_finalproject\\gamemain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAF60808-C52D-251D-9D42-1518EE777438}|IT145_FinalProject.csproj|solutionrelative:gamemain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAF60808-C52D-251D-9D42-1518EE777438}|IT145_FinalProject.csproj|c:\\documents\\visual studio\\snhu\\it145\\it145_finalproject\\characterlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAF60808-C52D-251D-9D42-1518EE777438}|IT145_FinalProject.csproj|solutionrelative:characterlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAF60808-C52D-251D-9D42-1518EE777438}|IT145_FinalProject.csproj|C:\\Documents\\VIsual Studio\\SNHU\\IT145\\IT145_FinalProject\\characterlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BAF60808-C52D-251D-9D42-1518EE777438}|IT145_FinalProject.csproj|solutionrelative:characterlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAF60808-C52D-251D-9D42-1518EE777438}|IT145_FinalProject.csproj|C:\\Documents\\VIsual Studio\\SNHU\\IT145\\IT145_FinalProject\\charactercreation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BAF60808-C52D-251D-9D42-1518EE777438}|IT145_FinalProject.csproj|solutionrelative:charactercreation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAF60808-C52D-251D-9D42-1518EE777438}|IT145_FinalProject.csproj|c:\\documents\\visual studio\\snhu\\it145\\it145_finalproject\\properties\\resources.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{BAF60808-C52D-251D-9D42-1518EE777438}|IT145_FinalProject.csproj|solutionrelative:properties\\resources.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Combat.cs",
+              "DocumentMoniker": "C:\\Documents\\VIsual Studio\\SNHU\\IT145\\IT145_FinalProject\\Combat.cs",
+              "RelativeDocumentMoniker": "Combat.cs",
+              "ToolTip": "C:\\Documents\\VIsual Studio\\SNHU\\IT145\\IT145_FinalProject\\Combat.cs",
+              "RelativeToolTip": "Combat.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-06T02:34:58.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CombatForm.cs",
+              "DocumentMoniker": "C:\\Documents\\VIsual Studio\\SNHU\\IT145\\IT145_FinalProject\\CombatForm.cs",
+              "RelativeDocumentMoniker": "CombatForm.cs",
+              "ToolTip": "C:\\Documents\\VIsual Studio\\SNHU\\IT145\\IT145_FinalProject\\CombatForm.cs",
+              "RelativeToolTip": "CombatForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T15:12:47.095Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Profession.cs",
+              "DocumentMoniker": "C:\\Documents\\VIsual Studio\\SNHU\\IT145\\IT145_FinalProject\\Profession.cs",
+              "RelativeDocumentMoniker": "Profession.cs",
+              "ToolTip": "C:\\Documents\\VIsual Studio\\SNHU\\IT145\\IT145_FinalProject\\Profession.cs",
+              "RelativeToolTip": "Profession.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAcwBEAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-06T01:08:20.256Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CombatForm.cs [Design]",
+              "DocumentMoniker": "C:\\Documents\\VIsual Studio\\SNHU\\IT145\\IT145_FinalProject\\CombatForm.cs",
+              "RelativeDocumentMoniker": "CombatForm.cs",
+              "ToolTip": "C:\\Documents\\VIsual Studio\\SNHU\\IT145\\IT145_FinalProject\\CombatForm.cs [Design]",
+              "RelativeToolTip": "CombatForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-25T16:56:28.304Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Ingredient.cs",
+              "DocumentMoniker": "C:\\Documents\\VIsual Studio\\SNHU\\IT145\\IT145_FinalProject\\Ingredient.cs",
+              "RelativeDocumentMoniker": "Ingredient.cs",
+              "ToolTip": "C:\\Documents\\VIsual Studio\\SNHU\\IT145\\IT145_FinalProject\\Ingredient.cs",
+              "RelativeToolTip": "Ingredient.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAgwDkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-06T00:38:05.851Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Character.cs",
+              "DocumentMoniker": "C:\\Documents\\VIsual Studio\\SNHU\\IT145\\IT145_FinalProject\\Character.cs",
+              "RelativeDocumentMoniker": "Character.cs",
+              "ToolTip": "C:\\Documents\\VIsual Studio\\SNHU\\IT145\\IT145_FinalProject\\Character.cs",
+              "RelativeToolTip": "Character.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAwMIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-25T14:23:17.063Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CharacterCreation.cs",
+              "DocumentMoniker": "C:\\Documents\\VIsual Studio\\SNHU\\IT145\\IT145_FinalProject\\CharacterCreation.cs",
+              "RelativeDocumentMoniker": "CharacterCreation.cs",
+              "ToolTip": "C:\\Documents\\VIsual Studio\\SNHU\\IT145\\IT145_FinalProject\\CharacterCreation.cs",
+              "RelativeToolTip": "CharacterCreation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T14:42:23.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Adventure.cs",
+              "DocumentMoniker": "C:\\Documents\\VIsual Studio\\SNHU\\IT145\\IT145_FinalProject\\Adventure.cs",
+              "RelativeDocumentMoniker": "Adventure.cs",
+              "ToolTip": "C:\\Documents\\VIsual Studio\\SNHU\\IT145\\IT145_FinalProject\\Adventure.cs",
+              "RelativeToolTip": "Adventure.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-25T17:31:23.219Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GameMain.cs [Design]",
+              "DocumentMoniker": "C:\\Documents\\VIsual Studio\\SNHU\\IT145\\IT145_FinalProject\\GameMain.cs",
+              "RelativeDocumentMoniker": "GameMain.cs",
+              "ToolTip": "C:\\Documents\\VIsual Studio\\SNHU\\IT145\\IT145_FinalProject\\GameMain.cs [Design]",
+              "RelativeToolTip": "GameMain.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T16:00:39.07Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TitleForm.cs [Design]",
+              "DocumentMoniker": "C:\\Documents\\VIsual Studio\\SNHU\\IT145\\IT145_FinalProject\\TitleForm.cs",
+              "RelativeDocumentMoniker": "TitleForm.cs",
+              "ToolTip": "C:\\Documents\\VIsual Studio\\SNHU\\IT145\\IT145_FinalProject\\TitleForm.cs [Design]",
+              "RelativeToolTip": "TitleForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T13:54:10.534Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TitleForm.cs",
+              "DocumentMoniker": "C:\\Documents\\VIsual Studio\\SNHU\\IT145\\IT145_FinalProject\\TitleForm.cs",
+              "RelativeDocumentMoniker": "TitleForm.cs",
+              "ToolTip": "C:\\Documents\\VIsual Studio\\SNHU\\IT145\\IT145_FinalProject\\TitleForm.cs",
+              "RelativeToolTip": "TitleForm.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAQwFMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T14:52:03.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CharacterList.cs",
+              "DocumentMoniker": "C:\\Documents\\VIsual Studio\\SNHU\\IT145\\IT145_FinalProject\\CharacterList.cs",
+              "RelativeDocumentMoniker": "CharacterList.cs",
+              "ToolTip": "C:\\Documents\\VIsual Studio\\SNHU\\IT145\\IT145_FinalProject\\CharacterList.cs",
+              "RelativeToolTip": "CharacterList.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-25T16:24:50.583Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Adventure.cs [Design]",
+              "DocumentMoniker": "C:\\Documents\\VIsual Studio\\SNHU\\IT145\\IT145_FinalProject\\Adventure.cs",
+              "RelativeDocumentMoniker": "Adventure.cs",
+              "ToolTip": "C:\\Documents\\VIsual Studio\\SNHU\\IT145\\IT145_FinalProject\\Adventure.cs [Design]",
+              "RelativeToolTip": "Adventure.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-25T16:56:11.698Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "GameMain.cs",
+              "DocumentMoniker": "C:\\Documents\\VIsual Studio\\SNHU\\IT145\\IT145_FinalProject\\GameMain.cs",
+              "RelativeDocumentMoniker": "GameMain.cs",
+              "ToolTip": "C:\\Documents\\VIsual Studio\\SNHU\\IT145\\IT145_FinalProject\\GameMain.cs",
+              "RelativeToolTip": "GameMain.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAQwFYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-25T14:28:54.244Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CharacterList.cs [Design]",
+              "DocumentMoniker": "C:\\Documents\\VIsual Studio\\SNHU\\IT145\\IT145_FinalProject\\CharacterList.cs",
+              "RelativeDocumentMoniker": "CharacterList.cs",
+              "ToolTip": "C:\\Documents\\VIsual Studio\\SNHU\\IT145\\IT145_FinalProject\\CharacterList.cs [Design]",
+              "RelativeToolTip": "CharacterList.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-25T16:22:34.709Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Resources.resx",
+              "DocumentMoniker": "C:\\Documents\\VIsual Studio\\SNHU\\IT145\\IT145_FinalProject\\Properties\\Resources.resx",
+              "RelativeDocumentMoniker": "Properties\\Resources.resx",
+              "ToolTip": "C:\\Documents\\VIsual Studio\\SNHU\\IT145\\IT145_FinalProject\\Properties\\Resources.resx",
+              "RelativeToolTip": "Properties\\Resources.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2026-03-25T16:38:04.893Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CharacterCreation.cs [Design]",
+              "DocumentMoniker": "C:\\Documents\\VIsual Studio\\SNHU\\IT145\\IT145_FinalProject\\CharacterCreation.cs",
+              "RelativeDocumentMoniker": "CharacterCreation.cs",
+              "ToolTip": "C:\\Documents\\VIsual Studio\\SNHU\\IT145\\IT145_FinalProject\\CharacterCreation.cs [Design]",
+              "RelativeToolTip": "CharacterCreation.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T14:42:11.873Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

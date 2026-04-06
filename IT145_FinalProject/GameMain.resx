@@ -1,120 +1,194 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<root>
-  <!--
-    Microsoft ResX Schema
+﻿/*
+ * Program: Character Class
+ * Purpose: Class to store character information
+ * Author: Thomas Shampney, Nicholas Ngueyen
+ * Date: 2026-04-05
+ */
 
-    Version 2.0
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Runtime.InteropServices;
+using System.Security.Policy;
+using System.Text;
 
-    The primary goals of this format is to allow a simple XML format
-    that is mostly human readable. The generation and parsing of the
-    various data types are done through the TypeConverter classes
-    associated with the data types.
+namespace IT145_FinalProject
+{
+    internal class Character
+    {
+        protected string _characterName; //TBS: Character name
+        protected int _characterHP; //TBS: Stat for character health scaling
+        protected int _characterATK; //TBS: Stat for damage scaling
+        protected int _characterINT; //TBS: Stat for secondary/passive/skill scaling
+        Profession _characterProfession; //TBS: Character profession inherit
+        protected Ingredient characterBasicIngred; //NN: 
 
-    Example:
+        public static BindingList<Character> _characterList = new BindingList<Character>(); //TBS: Binding list for characters
+        public static BindingList<Character> _characterEnemyList = new BindingList<Character>(); //TBS: binding list for enemies
 
-    ... ado.net/XML headers & schema ...
-    <resheader name="resmimetype">text/microsoft-resx</resheader>
-    <resheader name="version">2.0</resheader>
-    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
-    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
-    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
-    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
-    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
-        <value>[base64 mime encoded serialized .NET Framework object]</value>
-    </data>
-    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
-        <comment>This is a comment</comment>
-    </data>
+        public static List<Profession> _professions = new List<Profession>(); //TBS: Profession List
 
-    There are any number of "resheader" rows that contain simple
-    name/value pairs.
+        #region Constructors
+        public Character() //TBS: Default Constructor
+        {
+            _characterName = "";
+            _characterATK = 0;
+            _characterHP = 0;
+            _characterATK = 0;
+        } 
 
-    Each data row contains a name, and value. The row also contains a
-    type or mimetype. Type corresponds to a .NET class that support
-    text/value conversion through the TypeConverter architecture.
-    Classes that don't support this are serialized and stored with the
-    mimetype set.
+        public Character(string charName, int charHP, int charATK, int charINT, Profession charProfession) //TBS: Full Constructor
+        {
+            _characterProfession = charProfession;
+            _characterName = charName;
+            _characterATK = charProfession.GetProfessionATK();
+            _characterINT = charProfession.GetProfessionINT();
+            _characterHP = charProfession.GetProfessionHP();
+        }
+        public Character(Profession charProfession) //TBS: Class only constructor
+        {
+            _characterProfession = charProfession;
+            _characterHP = charProfession.GetProfessionHP();
+            _characterATK = charProfession.GetProfessionATK();
+            _characterINT = charProfession.GetProfessionINT();
+        }
+        public Character(Profession charProfession, string charName) //TBS: Class and name constructor
+        {
+            _characterName = charName;
+            _characterProfession = charProfession;
+            _characterHP = charProfession.GetProfessionHP();
+            _characterATK = charProfession.GetProfessionATK();
+            _characterINT = charProfession.GetProfessionINT();
+        }
+        public Character(string charName, int charHP, int charATK, int charINT) //TBS: Stat only constructor
+        {
+            _characterName = charName;
+            _characterATK = charATK;
+            _characterINT = charINT;
+            _characterHP = charHP;
+        }
+        public Character(Profession charProfession, string charName, Ingredient charIng) //TBS: Class and name constructor
+        {
+            characterBasicIngred = charIng;
+            _characterName = charName;
+            _characterProfession = charProfession;
+            _characterHP = charIng.GetIngredientHp() + charProfession.GetProfessionHP();
+            _characterATK = charIng.GetIngredientAtk() + charProfession.GetProfessionATK();
+            _characterINT = charIng.GetIngredientInt() + charProfession.GetProfessionINT();
+        }
 
-    The mimetype is used for serialized objects, and tells the
-    ResXResourceReader how to depersist the object. This is currently not
-    extensible. For a given mimetype the value must be set accordingly:
 
-    Note - application/x-microsoft.net.object.binary.base64 is the format
-    that the ResXResourceWriter will generate, however the reader can
-    read any of the formats listed below.
+        #endregion
 
-    mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with
-            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
-            : and then encoded with base64 encoding.
+            #region Get Set
+        public void CharacterSetClass (Profession charProfession) //TBS: Set character class
+        {
+            _characterProfession = charProfession; 
+        }
 
-    mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with
-            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
-            : and then encoded with base64 encoding.
+        public void CharacterSetName(string name) //TBS: Set Name Functiion
+        {
+            _characterName = name;
+        }
 
-    mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array
-            : using a System.ComponentModel.TypeConverter
-            : and then encoded with base64 encoding.
-    -->
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
-    <xsd:element name="root" msdata:IsDataSet="true">
-      <xsd:complexType>
-        <xsd:choice maxOccurs="unbounded">
-          <xsd:element name="metadata">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
-              </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string" />
-              <xsd:attribute name="type" type="xsd:string" />
-              <xsd:attribute name="mimetype" type="xsd:string" />
-              <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="assembly">
-            <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string" />
-              <xsd:attribute name="name" type="xsd:string" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="data">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-              <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="resheader">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" />
-            </xsd:complexType>
-          </xsd:element>
-        </xsd:choice>
-      </xsd:complexType>
-    </xsd:element>
-  </xsd:schema>
-  <resheader name="resmimetype">
-    <value>text/microsoft-resx</value>
-  </resheader>
-  <resheader name="version">
-    <value>2.0</value>
-  </resheader>
-  <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </resheader>
-  <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </resheader>
-</root>
+        public void CharacterSetATK(int ATK) //TBS: Set ATK Functiion   
+        {
+            _characterATK = ATK;
+        }
+        public void CharacterSetHP(int HP) //TBS: Set HP Functiion
+        {
+            _characterHP = HP;
+        }
+        public void CharacterSetINT(int INT) //TBS: Set INT Functiion
+        {
+            _characterINT = INT;
+        }
+
+        public string GetProfessionName() //TBS: Get Function for Name
+        {
+            return _characterProfession.GetProfessionName();
+        }
+
+        public int GetProfessionATK() //TBS: Get Function for ATK
+        {
+            return _characterProfession.GetProfessionATK();
+        } 
+         
+        public int GetProfessionHP() //TBS: Get Function for HP
+        {
+            return _characterProfession.GetProfessionHP();
+        }
+
+        public int GetProfessionINT() //TBS: Get Function for INT
+        {
+            return _characterProfession.GetProfessionINT();
+        }
+
+        public string CharacterGetName() //TBS: Get Function for character name
+        {
+            return _characterName;
+        }
+
+        public int GetCharacterHP() //TBS
+        {
+            return _characterHP;
+        }
+        public int GetCharacterATK() //TBS
+        {
+            return _characterATK;
+        }
+        public int GetCharacterINT() //TBS
+        {
+            return _characterINT;
+        }
+        public void CharacterSetBasicIngredient(Ingredient ingred) //NN
+        {
+            characterBasicIngred = ingred;
+        }
+        public string GetBasicIngredientName() //NN
+        {
+            if (characterBasicIngred != null)
+                return characterBasicIngred.getStats().Name;
+            else
+                return "None";
+        }
+        public (int HP, int ATK, int INT) GetBasicIngredientStats() //NN
+        {
+            if (characterBasicIngred != null)
+            {
+                var stats = characterBasicIngred.getStats();
+                return (stats.HP, stats.ATK, stats.INT);
+            }
+            else
+                return (0, 0, 0);
+        }
+
+        #endregion
+
+        #region Properties
+        public string CharacterName //TBS: Property for character name to be used with combobox
+        {
+            get { return _characterName; }
+        }
+
+        #endregion
+
+        #region Ability Functions
+        public static int useBasicAttack(Character activechar) //TBS: Function to use basic attack
+        {
+            int calcdmg;
+
+            calcdmg = activechar.GetProfessionATK();
+
+            return calcdmg;
+        }
+
+        public void useSpecialAttack() //TBS: Secondary attack for use with ingrediants
+        {
+
+        }
+
+        #endregion
+    }
+}
