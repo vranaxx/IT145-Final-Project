@@ -63,6 +63,36 @@ namespace IT145_FinalProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap battleback1 {
+            get {
+                object obj = ResourceManager.GetObject("battleback1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Battlebackkground1 {
+            get {
+                object obj = ResourceManager.GetObject("Battlebackkground1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap charsets_12_m_f_complete_by_antifarea_2_ {
+            get {
+                object obj = ResourceManager.GetObject("charsets_12_m-f_complete_by_antifarea(2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ExitX {
             get {
                 object obj = ResourceManager.GetObject("ExitX", resourceCulture);
@@ -96,6 +126,16 @@ namespace IT145_FinalProject.Properties {
         internal static System.Drawing.Bitmap TitleScreenBackground {
             get {
                 object obj = ResourceManager.GetObject("TitleScreenBackground", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wood_background {
+            get {
+                object obj = ResourceManager.GetObject("wood background", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

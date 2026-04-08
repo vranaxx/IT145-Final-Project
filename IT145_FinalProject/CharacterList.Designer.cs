@@ -1,120 +1,176 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<root>
-  <!--
-    Microsoft ResX Schema
+﻿namespace IT145_FinalProject
+{
+    partial class CharacterList
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
 
-    Version 2.0
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
 
-    The primary goals of this format is to allow a simple XML format
-    that is mostly human readable. The generation and parsing of the
-    various data types are done through the TypeConverter classes
-    associated with the data types.
+        #region Windows Form Designer generated code
 
-    Example:
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            TopBarPanel = new Panel();
+            ExitButton = new Button();
+            GameMainMenuPanel = new Panel();
+            BackButton = new Button();
+            InventoryButton = new Button();
+            CreateCharButton = new Button();
+            CharacterListCombo = new ComboBox();
+            GameMainViewPanel = new Panel();
+            TopBarPanel.SuspendLayout();
+            GameMainMenuPanel.SuspendLayout();
+            GameMainViewPanel.SuspendLayout();
+            SuspendLayout();
+            // 
+            // TopBarPanel
+            // 
+            TopBarPanel.BackColor = SystemColors.ControlDarkDark;
+            TopBarPanel.Controls.Add(ExitButton);
+            TopBarPanel.Dock = DockStyle.Top;
+            TopBarPanel.Location = new Point(0, 0);
+            TopBarPanel.Name = "TopBarPanel";
+            TopBarPanel.Size = new Size(800, 25);
+            TopBarPanel.TabIndex = 12;
+            // 
+            // ExitButton
+            // 
+            ExitButton.BackColor = Color.White;
+            ExitButton.BackgroundImage = Properties.Resources.ExitX;
+            ExitButton.Location = new Point(777, 2);
+            ExitButton.Name = "ExitButton";
+            ExitButton.Size = new Size(20, 20);
+            ExitButton.TabIndex = 6;
+            ExitButton.Text = "&Exit";
+            ExitButton.UseVisualStyleBackColor = false;
+            ExitButton.Click += ExitButton_Click;
+            // 
+            // GameMainMenuPanel
+            // 
+            GameMainMenuPanel.BackgroundImage = Properties.Resources.paper_background;
+            GameMainMenuPanel.Controls.Add(BackButton);
+            GameMainMenuPanel.Controls.Add(InventoryButton);
+            GameMainMenuPanel.Controls.Add(CreateCharButton);
+            GameMainMenuPanel.Dock = DockStyle.Left;
+            GameMainMenuPanel.Location = new Point(0, 25);
+            GameMainMenuPanel.Name = "GameMainMenuPanel";
+            GameMainMenuPanel.Size = new Size(200, 450);
+            GameMainMenuPanel.TabIndex = 13;
+            // 
+            // BackButton
+            // 
+            BackButton.BackColor = Color.Transparent;
+            BackButton.BackgroundImage = Properties.Resources.RPG_GUI_Button;
+            BackButton.BackgroundImageLayout = ImageLayout.Stretch;
+            BackButton.FlatAppearance.BorderSize = 0;
+            BackButton.FlatStyle = FlatStyle.Flat;
+            BackButton.Font = new Font("Viner Hand ITC", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            BackButton.ForeColor = Color.Cyan;
+            BackButton.Location = new Point(12, 393);
+            BackButton.Name = "BackButton";
+            BackButton.Size = new Size(170, 45);
+            BackButton.TabIndex = 4;
+            BackButton.Text = "Main Menu";
+            BackButton.UseVisualStyleBackColor = false;
+            BackButton.Click += BackButton_Click;
+            // 
+            // InventoryButton
+            // 
+            InventoryButton.BackColor = Color.Transparent;
+            InventoryButton.BackgroundImage = Properties.Resources.RPG_GUI_Button;
+            InventoryButton.BackgroundImageLayout = ImageLayout.Stretch;
+            InventoryButton.FlatAppearance.BorderSize = 0;
+            InventoryButton.FlatStyle = FlatStyle.Flat;
+            InventoryButton.Font = new Font("Viner Hand ITC", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            InventoryButton.ForeColor = Color.Cyan;
+            InventoryButton.Location = new Point(12, 182);
+            InventoryButton.Name = "InventoryButton";
+            InventoryButton.Size = new Size(170, 45);
+            InventoryButton.TabIndex = 3;
+            InventoryButton.Text = "Character List";
+            InventoryButton.UseVisualStyleBackColor = false;
+            InventoryButton.Click += InventoryButton_Click;
+            // 
+            // CreateCharButton
+            // 
+            CreateCharButton.BackColor = Color.Transparent;
+            CreateCharButton.BackgroundImage = Properties.Resources.RPG_GUI_Button;
+            CreateCharButton.BackgroundImageLayout = ImageLayout.Stretch;
+            CreateCharButton.FlatAppearance.BorderSize = 0;
+            CreateCharButton.FlatStyle = FlatStyle.Flat;
+            CreateCharButton.Font = new Font("Viner Hand ITC", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            CreateCharButton.ForeColor = Color.Cyan;
+            CreateCharButton.Location = new Point(12, 131);
+            CreateCharButton.Name = "CreateCharButton";
+            CreateCharButton.Size = new Size(170, 45);
+            CreateCharButton.TabIndex = 2;
+            CreateCharButton.Text = "Create Character";
+            CreateCharButton.UseVisualStyleBackColor = false;
+            CreateCharButton.Click += CreateCharButton_Click;
+            // 
+            // CharacterListCombo
+            // 
+            CharacterListCombo.FormattingEnabled = true;
+            CharacterListCombo.Location = new Point(17, 17);
+            CharacterListCombo.Name = "CharacterListCombo";
+            CharacterListCombo.Size = new Size(151, 28);
+            CharacterListCombo.TabIndex = 0;
+            CharacterListCombo.SelectedIndexChanged += CharacterListCombo_SelectedIndexChanged;
+            // 
+            // GameMainViewPanel
+            // 
+            GameMainViewPanel.BackgroundImage = Properties.Resources.wood_background;
+            GameMainViewPanel.Controls.Add(CharacterListCombo);
+            GameMainViewPanel.Dock = DockStyle.Right;
+            GameMainViewPanel.Location = new Point(200, 25);
+            GameMainViewPanel.Name = "GameMainViewPanel";
+            GameMainViewPanel.Size = new Size(600, 450);
+            GameMainViewPanel.TabIndex = 14;
+            // 
+            // CharacterList
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 475);
+            Controls.Add(GameMainViewPanel);
+            Controls.Add(GameMainMenuPanel);
+            Controls.Add(TopBarPanel);
+            FormBorderStyle = FormBorderStyle.None;
+            Name = "CharacterList";
+            Text = "CharacterList";
+            TopBarPanel.ResumeLayout(false);
+            GameMainMenuPanel.ResumeLayout(false);
+            GameMainViewPanel.ResumeLayout(false);
+            ResumeLayout(false);
+        }
 
-    ... ado.net/XML headers & schema ...
-    <resheader name="resmimetype">text/microsoft-resx</resheader>
-    <resheader name="version">2.0</resheader>
-    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
-    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
-    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
-    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
-    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
-        <value>[base64 mime encoded serialized .NET Framework object]</value>
-    </data>
-    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
-        <comment>This is a comment</comment>
-    </data>
+        #endregion
 
-    There are any number of "resheader" rows that contain simple
-    name/value pairs.
-
-    Each data row contains a name, and value. The row also contains a
-    type or mimetype. Type corresponds to a .NET class that support
-    text/value conversion through the TypeConverter architecture.
-    Classes that don't support this are serialized and stored with the
-    mimetype set.
-
-    The mimetype is used for serialized objects, and tells the
-    ResXResourceReader how to depersist the object. This is currently not
-    extensible. For a given mimetype the value must be set accordingly:
-
-    Note - application/x-microsoft.net.object.binary.base64 is the format
-    that the ResXResourceWriter will generate, however the reader can
-    read any of the formats listed below.
-
-    mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with
-            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
-            : and then encoded with base64 encoding.
-
-    mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with
-            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
-            : and then encoded with base64 encoding.
-
-    mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array
-            : using a System.ComponentModel.TypeConverter
-            : and then encoded with base64 encoding.
-    -->
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
-    <xsd:element name="root" msdata:IsDataSet="true">
-      <xsd:complexType>
-        <xsd:choice maxOccurs="unbounded">
-          <xsd:element name="metadata">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
-              </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string" />
-              <xsd:attribute name="type" type="xsd:string" />
-              <xsd:attribute name="mimetype" type="xsd:string" />
-              <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="assembly">
-            <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string" />
-              <xsd:attribute name="name" type="xsd:string" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="data">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-              <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="resheader">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" />
-            </xsd:complexType>
-          </xsd:element>
-        </xsd:choice>
-      </xsd:complexType>
-    </xsd:element>
-  </xsd:schema>
-  <resheader name="resmimetype">
-    <value>text/microsoft-resx</value>
-  </resheader>
-  <resheader name="version">
-    <value>2.0</value>
-  </resheader>
-  <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </resheader>
-  <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </resheader>
-</root>
+        private Panel TopBarPanel;
+        private Button ExitButton;
+        private Panel GameMainMenuPanel;
+        private Button BackButton;
+        private Button InventoryButton;
+        private Button CreateCharButton;
+        private Panel GameMainViewPanel;
+        private ComboBox CharacterListCombo;
+    }
+}
