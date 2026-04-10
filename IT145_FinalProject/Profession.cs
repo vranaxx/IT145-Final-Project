@@ -2,7 +2,7 @@
  * Program: Profession Class
  * Purpose: Class to define what a profession is for use in character class
  * Author: Thomas Shampney
- * Date: 2026-03-20
+ * Date: 2026-04-05
  */
 
 using System;
@@ -13,12 +13,12 @@ namespace IT145_FinalProject
 {
     internal class Profession
     {
-        // private HashSet<String> _professionNames = new HashSet<String>() { "Warrior", "Tank", "Rogue" }; //TBS: HashSet for class names
-
         private string _professionName; //TBS: Variable for class name; also used as UID
         private int _professionINT; //TBS: Profession base INT stat
         private int _professsionHP; //TBS: Profession base HP stat
         private int _professionATK; //TBS: Profession base ATK stat
+
+        private static Random random = new Random();
 
         public Profession() //TBS: Defaault Constructor
         {
@@ -68,6 +68,15 @@ namespace IT145_FinalProject
         public int GetProfessionATK()
         {
             return _professionATK;
+        }
+        public static Profession GetCharacterProffesionRandom()
+        {
+            Character._professions.Add(new Profession("Warrior"));
+            Character._professions.Add(new Profession("Tank"));
+            Character._professions.Add(new Profession("Ranged"));            
+
+            int index = random.Next(Character._professions.Count);
+            return Character._professions[index];
         }
     }
 }

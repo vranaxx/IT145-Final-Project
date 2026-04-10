@@ -6,5 +6,15 @@ EXAMPLE -   2026/02/25 - Thomas - Fixed x in y
 
 
 
-2026/03/27 - Nicholas - Attempted to add static List in Character class: added (non-working) ComboBox in creation form
+Nicholas Restaurant Changes:
+
+
+
+Character.cs: Character set value clamping
+
+Ingredient.cs: Special effect attribute addition
+
+Meal.cs: Combines up to 3 ingredients, merges effects, takes majority special effect
+
+Restaruant.cs: Contains ingredient inventory, checks if ingredients are owned before creating Meals
 

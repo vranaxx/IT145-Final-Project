@@ -31,6 +31,7 @@
             TopBarPanel = new Panel();
             ExitButton = new Button();
             GameMainMenuPanel = new Panel();
+            VentureButton = new Button();
             BackButton = new Button();
             InventoryButton = new Button();
             CharacterButton = new Button();
@@ -66,6 +67,7 @@
             // GameMainMenuPanel
             // 
             GameMainMenuPanel.BackgroundImage = Properties.Resources.paper_background;
+            GameMainMenuPanel.Controls.Add(VentureButton);
             GameMainMenuPanel.Controls.Add(BackButton);
             GameMainMenuPanel.Controls.Add(InventoryButton);
             GameMainMenuPanel.Controls.Add(CharacterButton);
@@ -76,6 +78,23 @@
             GameMainMenuPanel.Name = "GameMainMenuPanel";
             GameMainMenuPanel.Size = new Size(200, 450);
             GameMainMenuPanel.TabIndex = 12;
+            // 
+            // VentureButton
+            // 
+            VentureButton.BackColor = Color.Transparent;
+            VentureButton.BackgroundImage = Properties.Resources.RPG_GUI_Button;
+            VentureButton.BackgroundImageLayout = ImageLayout.Stretch;
+            VentureButton.FlatAppearance.BorderSize = 0;
+            VentureButton.FlatStyle = FlatStyle.Flat;
+            VentureButton.Font = new Font("Viner Hand ITC", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            VentureButton.ForeColor = Color.Cyan;
+            VentureButton.Location = new Point(12, 6);
+            VentureButton.Name = "VentureButton";
+            VentureButton.Size = new Size(170, 45);
+            VentureButton.TabIndex = 5;
+            VentureButton.Text = "Venture";
+            VentureButton.UseVisualStyleBackColor = false;
+            VentureButton.Click += VentureButton_Click;
             // 
             // BackButton
             // 
@@ -103,7 +122,7 @@
             InventoryButton.FlatStyle = FlatStyle.Flat;
             InventoryButton.Font = new Font("Viner Hand ITC", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             InventoryButton.ForeColor = Color.Cyan;
-            InventoryButton.Location = new Point(12, 261);
+            InventoryButton.Location = new Point(12, 108);
             InventoryButton.Name = "InventoryButton";
             InventoryButton.Size = new Size(170, 45);
             InventoryButton.TabIndex = 3;
@@ -119,7 +138,7 @@
             CharacterButton.FlatStyle = FlatStyle.Flat;
             CharacterButton.Font = new Font("Viner Hand ITC", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             CharacterButton.ForeColor = Color.Cyan;
-            CharacterButton.Location = new Point(12, 210);
+            CharacterButton.Location = new Point(12, 57);
             CharacterButton.Name = "CharacterButton";
             CharacterButton.Size = new Size(170, 45);
             CharacterButton.TabIndex = 2;
@@ -136,7 +155,7 @@
             RestaurantButton.FlatStyle = FlatStyle.Flat;
             RestaurantButton.Font = new Font("Viner Hand ITC", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             RestaurantButton.ForeColor = Color.Cyan;
-            RestaurantButton.Location = new Point(12, 159);
+            RestaurantButton.Location = new Point(12, 210);
             RestaurantButton.Name = "RestaurantButton";
             RestaurantButton.Size = new Size(170, 45);
             RestaurantButton.TabIndex = 1;
@@ -152,7 +171,7 @@
             GachaButton.FlatStyle = FlatStyle.Flat;
             GachaButton.Font = new Font("Viner Hand ITC", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             GachaButton.ForeColor = Color.Cyan;
-            GachaButton.Location = new Point(12, 108);
+            GachaButton.Location = new Point(12, 159);
             GachaButton.Name = "GachaButton";
             GachaButton.Size = new Size(170, 45);
             GachaButton.TabIndex = 0;
@@ -196,5 +215,6 @@
         private Button InventoryButton;
         private Button CharacterButton;
         private Button RestaurantButton;
+        private Button VentureButton;
     }
 }

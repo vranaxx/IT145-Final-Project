@@ -63,7 +63,6 @@
             // 
             // professionCombo
             // 
-            professionCombo.DropDownStyle = ComboBoxStyle.DropDownList;
             professionCombo.FormattingEnabled = true;
             professionCombo.Items.AddRange(new object[] { "Warrior", "Tank", "Ranged" });
             professionCombo.Location = new Point(31, 62);

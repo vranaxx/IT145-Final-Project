@@ -1,4 +1,12 @@
-﻿using System;
+﻿/*
+ * Program: Game Main Form
+ * Purpose: Form for the games main playing screen
+ * Author: Thomas Shampney
+ * 3/25/26
+ */
+
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -46,11 +54,11 @@ namespace IT145_FinalProject
         {
             Application.Exit();
         }
-        private void BackButton_Click(object sender, EventArgs e)
+        private void BackButton_Click(object sender, EventArgs e) //TBS: Returns to previous form
         {
             this.Close();
-        }
-        private void CharacterButton_Click(object sender, EventArgs e)
+        } 
+        private void CharacterButton_Click(object sender, EventArgs e) //TBS: Opens character from
         {
             CharacterList characterlist = new CharacterList();
 
@@ -63,6 +71,20 @@ namespace IT145_FinalProject
             this.Hide();
 
             characterlist.Show();
-        }
+        } 
+        private void VentureButton_Click(object sender, EventArgs e) //TBS: Opens adventure form
+        {
+            Adventure adventure = new Adventure();
+
+            adventure.StartPosition = FormStartPosition.Manual;
+
+            adventure.Location = this.Location;
+
+            adventure.FormClosed += (s, args) => this.Show();
+
+            this.Hide();
+
+            adventure.Show();
+        } 
     }
 }

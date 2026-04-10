@@ -28,19 +28,13 @@ namespace IT145_FinalProject
         {
             InitializeComponent();
 
-            // this.Load += new EventHandler(CharacterCreation_Load); //TBS: Open in full screen
-
             this.TopBarPanel.MouseDown += new MouseEventHandler(TopBar_MouseDown); //TBS: Part of the form moving event
         }
 
-        private void CharacterCreation_Load(object sender, EventArgs e)
+        private void CharacterCreation_Load(object sender, EventArgs e) //TBS
         {
-
-            // this.WindowState = FormWindowState.Normal; //TBS: Temp set windowstate to normal to ensure changes take effect
-            // this.Bounds = Screen.PrimaryScreen.Bounds; //TBS: Sets form bounds to screen bounds
-            // this.WindowState = FormWindowState.Maximized; //TBS: Maximize window
         }
-        private void createcharButton_Click(object sender, EventArgs e)
+        private void createcharButton_Click(object sender, EventArgs e) //TBS
         {
             if (professionCombo.Text == "")
             {
@@ -50,32 +44,36 @@ namespace IT145_FinalProject
             string tempNameSelection = charnameTxt.Text;
             string professionSelection = professionCombo.Text;
             Profession tempProfession = new Profession(professionSelection);
-            
+
             createdChar = new Character(tempProfession, tempNameSelection);
-            Character.characterInventory.Add(createdChar);
 
             createdChar.CharacterSetBasicIngredient(
                 Ingredient.basicIngredients[Random.Shared.Next(Ingredient.basicIngredients.Count)]
                 );
 
+            Character._characterList.Add(createdChar);
+
             MessageBox.Show("Character created successfully!");
         }
 
-        private void displayprofstatButton_Click(object sender, EventArgs e)
+        private void displayprofstatButton_Click(object sender, EventArgs e) //TBS
         {
             if (createdChar == null)
             {
                 MessageBox.Show("Error: No character created yet!");
                 return;
             }
+
             var charStats = createdChar.GetBasicIngredientStats();
+
             MessageBox.Show(
-                $"Name: {createdChar.GetCharacterName()}\n" +
+                $"Name: {createdChar.CharacterGetName()}\n" +
                 $"Profession: {createdChar.GetProfessionName()}\n" +
                 $"ATK: {createdChar.GetProfessionATK()}\n" +
                 $"HP: {createdChar.GetProfessionHP()}\n" +
                 $"INT: {createdChar.GetProfessionINT()}\n" +
                 $"Ingredient 1: {createdChar.GetBasicIngredientName()}: (ATK: {charStats.ATK} HP: {charStats.HP} INT: {charStats.INT})"
+
                 );
         }
 

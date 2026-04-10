@@ -75,5 +75,10 @@ namespace IT145_FinalProject
                 SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
             }
         }
+
+        private void ExitMainButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

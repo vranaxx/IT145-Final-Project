@@ -32,6 +32,7 @@
             TitleScreenLabel = new Label();
             StartButton = new Button();
             TopBarPanel = new Panel();
+            ExitMainButton = new Button();
             TopBarPanel.SuspendLayout();
             SuspendLayout();
             // 
@@ -84,6 +85,23 @@
             TopBarPanel.Size = new Size(800, 25);
             TopBarPanel.TabIndex = 10;
             // 
+            // ExitMainButton
+            // 
+            ExitMainButton.BackColor = Color.Transparent;
+            ExitMainButton.BackgroundImage = Properties.Resources.RPG_GUI_Button;
+            ExitMainButton.BackgroundImageLayout = ImageLayout.Stretch;
+            ExitMainButton.FlatAppearance.BorderSize = 0;
+            ExitMainButton.FlatStyle = FlatStyle.Flat;
+            ExitMainButton.Font = new Font("Viner Hand ITC", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ExitMainButton.ForeColor = Color.Cyan;
+            ExitMainButton.Location = new Point(50, 241);
+            ExitMainButton.Name = "ExitMainButton";
+            ExitMainButton.Size = new Size(164, 43);
+            ExitMainButton.TabIndex = 11;
+            ExitMainButton.Text = "Exit";
+            ExitMainButton.UseVisualStyleBackColor = false;
+            ExitMainButton.Click += ExitMainButton_Click;
+            // 
             // TitleForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -91,6 +109,7 @@
             BackgroundImage = Properties.Resources.TitleScreenBackground;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(800, 475);
+            Controls.Add(ExitMainButton);
             Controls.Add(TopBarPanel);
             Controls.Add(StartButton);
             Controls.Add(TitleScreenLabel);
@@ -109,5 +128,6 @@
         private Label TitleScreenLabel;
         private Button StartButton;
         private Panel TopBarPanel;
+        private Button ExitMainButton;
     }
 }

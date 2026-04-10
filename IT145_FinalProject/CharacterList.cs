@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace IT145_FinalProject
 {
@@ -27,6 +28,8 @@ namespace IT145_FinalProject
             InitializeComponent();
 
             this.TopBarPanel.MouseDown += new MouseEventHandler(TopBar_MouseDown); //TBS: Part of the form moving event
+
+            CharacterListCombo.Hide();
         }
         private void TopBar_MouseDown(object sender, MouseEventArgs e) //TBS: Event for mooving form
         {
@@ -57,6 +60,22 @@ namespace IT145_FinalProject
         private void BackButton_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void CharacterListCombo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void InventoryButton_Click(object sender, EventArgs e)
+        {
+            CharacterListCombo.Show();
+
+            CharacterListCombo.DataSource = null;
+
+            CharacterListCombo.DataSource = Character._characterList;
+
+            CharacterListCombo.DisplayMember = "CharacterName";
         }
     }
 }
