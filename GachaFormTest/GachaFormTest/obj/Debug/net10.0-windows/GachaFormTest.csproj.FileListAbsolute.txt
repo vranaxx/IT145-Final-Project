@@ -1,0 +1,16 @@
+C:\Users\jkris\OneDrive\Programing\IT145\C#\GachaFormTest\GachaFormTest\bin\Debug\net10.0-windows\GachaFormTest.exe
+C:\Users\jkris\OneDrive\Programing\IT145\C#\GachaFormTest\GachaFormTest\bin\Debug\net10.0-windows\GachaFormTest.deps.json
+C:\Users\jkris\OneDrive\Programing\IT145\C#\GachaFormTest\GachaFormTest\bin\Debug\net10.0-windows\GachaFormTest.runtimeconfig.json
+C:\Users\jkris\OneDrive\Programing\IT145\C#\GachaFormTest\GachaFormTest\bin\Debug\net10.0-windows\GachaFormTest.dll
+C:\Users\jkris\OneDrive\Programing\IT145\C#\GachaFormTest\GachaFormTest\bin\Debug\net10.0-windows\GachaFormTest.pdb
+C:\Users\jkris\OneDrive\Programing\IT145\C#\GachaFormTest\GachaFormTest\obj\Debug\net10.0-windows\GachaFormTest.Form1.resources
+C:\Users\jkris\OneDrive\Programing\IT145\C#\GachaFormTest\GachaFormTest\obj\Debug\net10.0-windows\GachaFormTest.csproj.GenerateResource.cache
+C:\Users\jkris\OneDrive\Programing\IT145\C#\GachaFormTest\GachaFormTest\obj\Debug\net10.0-windows\GachaFormTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jkris\OneDrive\Programing\IT145\C#\GachaFormTest\GachaFormTest\obj\Debug\net10.0-windows\GachaFormTest.AssemblyInfoInputs.cache
+C:\Users\jkris\OneDrive\Programing\IT145\C#\GachaFormTest\GachaFormTest\obj\Debug\net10.0-windows\GachaFormTest.AssemblyInfo.cs
+C:\Users\jkris\OneDrive\Programing\IT145\C#\GachaFormTest\GachaFormTest\obj\Debug\net10.0-windows\GachaFormTest.csproj.CoreCompileInputs.cache
+C:\Users\jkris\OneDrive\Programing\IT145\C#\GachaFormTest\GachaFormTest\obj\Debug\net10.0-windows\GachaFormTest.dll
+C:\Users\jkris\OneDrive\Programing\IT145\C#\GachaFormTest\GachaFormTest\obj\Debug\net10.0-windows\refint\GachaFormTest.dll
+C:\Users\jkris\OneDrive\Programing\IT145\C#\GachaFormTest\GachaFormTest\obj\Debug\net10.0-windows\GachaFormTest.pdb
+C:\Users\jkris\OneDrive\Programing\IT145\C#\GachaFormTest\GachaFormTest\obj\Debug\net10.0-windows\GachaFormTest.genruntimeconfig.cache
+C:\Users\jkris\OneDrive\Programing\IT145\C#\GachaFormTest\GachaFormTest\obj\Debug\net10.0-windows\ref\GachaFormTest.dll
